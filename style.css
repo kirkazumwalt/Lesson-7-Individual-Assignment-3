@@ -1,0 +1,229 @@
+h1 {
+  text-align: center;
+  color: black;
+  font-size: 120px;
+  font-family: "Teko", sans-serif;
+  font-weight: lighter;
+  margin: 0;
+  padding-top: 15px;
+}
+body {
+  color: black;
+  font-family: "Teko", sans-serif;
+  font-style: italic;
+  font-size: 30px;
+  background-color: rgb(155, 58, 155);
+}
+
+#voted {
+  text-align: center;
+  color: goldenrod;
+  font-style: italic;
+  font-size: 50px;
+}
+
+.page {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#container {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
+
+.shifted {
+  position: relative;
+  top: 10px;
+  right: 500px;
+}
+
+.photo {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 200px;
+  min-width: 0;
+  gap: 15px;
+  padding: 10px;
+  box-shadow: 3px 3px 3px lightgray;
+  border: 1px solid lightgray;
+}
+
+.photo-main {
+  display: flex;
+  flex-direction: column;
+  min-width: 0px;
+  text-align: center;
+}
+
+.photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.photo-main p {
+  margin: 0;
+  padding-top: 10px;
+}
+
+.description {
+  min-width: 0;
+  margin: 0;
+  text-align: left;
+  overflow-wrap: anywhere; /* Allow long words to fit. */
+}
+
+div.directions-map {
+  display: none;
+}
+
+/* Wider screens: place each description beside its image. */
+@media (min-width: 760px) {
+  .photo {
+    flex-basis: 320px; /* Allow room for both image and text. */
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .photo-main {
+    flex: 0 0 150px;
+  }
+
+  .description {
+    flex: 1;
+  }
+} /*media end*/
+
+.framed {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  color: black;
+  font-size: 15px;
+  padding: 7px 7px;
+  text-decoration: none;
+  color: rgb(194, 185, 185);
+}
+
+footer {
+  text-align: center;
+}
+
+@media (min-width: 500px) and (max-width: 760px) {
+  .photo-main {
+    max-width: 150px;
+  }
+}
+
+/*small screen*/
+@media (width < 500px) {
+  div.framed > img {
+    height: 150px;
+    width: 150px;
+    display: none;
+  }
+  div.framed {
+    justify-content: center;
+  }
+
+  #voted {
+    font-size: 35px;
+  }
+
+  div.framed > h1 {
+    font-size: 50px;
+  }
+  .hide-small {
+    display: none;
+    visibility: collapse;
+  }
+
+  #container {
+    display: none;
+  }
+
+  div.directions-map {
+    display: block;
+  }
+  footer {
+    display: none;
+  }
+}
+
+/* Medium screens only: tablets and similarly sized windows. */
+@media (600px <= width < 800px) {
+  #container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .photo {
+    display: flex;
+    flex: none; /* Do not use the desktop flex size as a row height. */
+    flex-direction: row; /* Image group left, description right. */
+    min-width: 0;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 3px 3px 3px lightgray;
+    border: 1px solid lightgray;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .photo-main {
+    display: flex;
+    flex-direction: column; /* Keep the title below the image. */
+    flex: 0 0 120px;
+    min-width: 0;
+    text-align: center;
+  }
+
+  .photo-main img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .photo-main p {
+    margin: 0;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .description {
+    display: block;
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    overflow-wrap: anywhere;
+  }
+
+  footer .location-info {
+    display: none; /* Remove location details and their space. */
+  }
+
+  footer .contact-info {
+    display: block;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+}

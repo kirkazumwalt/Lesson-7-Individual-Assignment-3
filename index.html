@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 7 Individual Assignment 3</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="framed">
+      <img src="Z.jpg" width="175" height="175" />
+      <h1>Z's Restaurant</h1>
+      <img
+        class="hide-small"
+        src="Z.jpg"
+        width="175"
+        height="175"
+        style="visibility: hidden"
+      />
+    </div>
+    <div class="page">
+      <p id="voted">Voted The Best Restaurant in 2026</p>
+      <br />
+      <div>
+        Z’s Restaurant is a modern Italian restaurant with a global twist,
+        Fusing traditional tastes with bold, modern influences. Our menu
+        features distinguished dishes like the Prime Reserve Filet, Truffle
+        Mushroom Fettuccine, highlighted by craft cocktails such as the Velvet
+        Martini, The Royal Reserve, and Peach Bellini. We also offer a wide
+        selection of wines, champagnes, and spirit-free cocktails for every
+        occasion.
+      </div>
+      <br />
+      <br />
+      <br />
+
+      <div id="container">
+        <div class="photo">
+          <!-- Keep the image and title together. -->
+          <div class="photo-main">
+            <img
+              src="Fish-L.jpg"
+              srcset="Fish-L.jpg 371w, Fish-M.jpg 292w, Fish-S.jpg 223w"
+              sizes="(min-width: 900px) 371w, 
+              (min-width: 800px) 292px,
+              223px"
+              alt="Fish"
+            />
+          </div>
+          <div class="description">Fish - Fresh caught</div>
+        </div>
+
+        <div class="photo">
+          <div class="photo-main">
+            <img src="Lamb.jpg" 
+              srcset="Lamb-L.jpg 680w, Lamb-M.jpg 544w, Lamb-S.jpg 408w"
+              sizes="(min-width: 900px) 680px, 
+              (min-width: 800px) 544px,
+              408px"
+              alt="Lamb"
+               />
+          </div>
+          <div class="description">Lamb - Organic Raised Lamb</div>
+        </div>
+
+        <div class="photo">
+          <div class="photo-main">
+            <img src="Lobster.jpg" 
+               srcset="Lobster-L.jpg 418w, Lobster-M.jpg 334w, Lobster-S.jpg 251w"
+              sizes="(min-width: 900px) 418px, 
+              (min-width: 800px) 334px,
+              251px"
+              alt="Lobster"
+              />
+          </div>
+          <div class="description">Lobster - Flown in from the east coast</div>
+        </div>
+
+        <div class="photo">
+          <div class="photo-main">
+            <img src="Steak.jpg" 
+              srcset="Steak-L.jpg 364w, Steak-M.jpg 291w, Steak-S.jpg 218w"
+              sizes="(min-width: 900px) 364px, 
+              (min-width: 800px) 291px,
+              218px"
+              alt="Steak"
+              />
+          </div>
+          <div class="description">Steak - Organic Raised Cattle</div>
+        </div>
+
+        <div class="photo">
+          <div class="photo-main">
+            <img src="Pasta.jpg" 
+              srcset="Pasta-L.jpg 452w, Pasta-M.jpg 362w, Pasta-S.jpg 271w"
+              sizes="(min-width: 900px) 452px, 
+              (min-width: 800px) 362px,
+              271px"
+              alt="Steak"
+            
+            />
+            
+          </div>
+          <!-- "photo-main" -->
+          <div class="description">Pasta - Traditional Style</div>
+        </div>
+        <!-- "photo" -->
+      </div>
+      <!-- container  -->
+    </div>
+    <!-- "page"-->
+    <div class="directions-map">
+      <img src="Map.jpg" />
+      Directions: I-5, Exit 125 "First Street", South on "First Street" for 1
+      mile, Left on Acolade Drive for 1 mile.
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <footer>
+      <!-- Hide this section on medium screens. -->
+      <div class="location-info">
+        <p>@2026 Z's Restaurant | 3333 Acolade Drive, San Diego, CA</p>
+        <p>Hours: 7 Days a Week 11:00am – 10:00pm</p>
+      </div>
+
+      <!-- Keep this section visible on medium screens. -->
+      <div class="contact-info">
+        <p>Contact Information: 1-800-555-5555</p>
+        <p>
+          Email: info@zrestaurant.com | Social Media: facebook.com/Z's
+          Restaurant
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
