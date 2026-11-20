@@ -7,6 +7,10 @@ h1 {
   margin: 0;
   padding-top: 15px;
 }
+#nav2 {
+    font-size: 20px;
+    
+}
 body {
   color: black;
   font-family: "Teko", sans-serif;
